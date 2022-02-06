@@ -1,0 +1,577 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/slatko_20.jpg');
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: lighten;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/logo.png");
+    background-position: center;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#icons-for-resp {
+    display: none;
+}
+
+#menu, #proizvodi-dropdown {
+    display: none;
+}
+
+#menu-label {
+    display: none;
+}
+
+nav {
+    float: right;
+    padding: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    display: inline-block;
+    padding: 14px 18px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    background-color: white;
+    border-bottom: 2px solid rgba(142, 185, 199, 0);
+    border-radius: 5px;
+}
+
+#for-after-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#for-after-arrow::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url('../img/down-arrow.svg') no-repeat;
+    margin-left: 5px;
+    float: right;
+}
+
+#facebook-icon {
+    margin-left: 20px;
+}
+
+#facebook-icon a, #instagram-icon a, #prijava-icon a {
+    padding: 10px 5px;
+}
+
+a img {
+    vertical-align: middle;
+    width: 40px;
+}
+
+#icons-for-resp>:nth-child(2) img, #kosarica-icon img {
+    width: 36px;
+}
+
+.nav-item a:hover {
+    background-color: rgb(106, 156, 180);
+    border-color: rgb(171, 198, 207);
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 0px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+nav {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+main {
+    padding-top: 180px;
+}
+
+.-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    background-color: #91C5DD;
+    color: #628697;
+    border-radius: 10px;
+    text-align: center;
+    height: 50px;
+    width: 250px;
+    font-size: 18px;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #628697;
+    color: white;
+}
+
+#info>div {
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 470px;
+    padding: 40px 70px 55px;
+    border-radius: 90px;
+}
+
+#info>:nth-child(2) {
+    margin-left: 10%;
+}
+
+#info>:nth-child(3) {
+    margin-right: 5%;
+    position: relative;
+    top: -150px;
+    float: right;
+    padding-bottom: 40px;
+}
+
+#info>:nth-child(4) {
+    margin-left: 25%;
+    margin-top: 80px;
+    padding-bottom: 40px;
+}
+
+#info h2 {
+    margin-left: 20%;
+    margin-bottom: 50px;
+}
+
+#info a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+#kont{
+    align-items: flex-start;
+}
+
+#kont>p {
+    margin-bottom: 30px;
+}
+
+#kontakt-forma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#kontakt-forma>div {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#kontakt-forma div>:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+}
+
+#kontakt-forma div>:nth-child(5) {
+    display: flex;
+    justify-content: center;
+}
+
+#kontakt-forma div div input {
+    width: 49%;
+    background-color: rgba(145, 197, 221, 0.8);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+textarea {
+    padding: 10px 15px;
+    background-color: rgba(145, 197, 221, 0.8);
+    border: none;
+    margin: 10px 0;
+    height: 220px;
+    border-radius: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+}
+
+footer {
+    margin-top: 50px;
+    background-image: url('../img/logo_footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px 50px;
+}
+
+footer>div {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+footer>div>div, #kont {
+    width: 100%;
+    text-align: center;
+}
+
+footer div div img, #kont img {
+    width: 32px;
+    margin-right: 10px;
+}
+
+footer a {
+    color: white;
+}
+
+#kontakt, #kont {
+    display: flex;
+    flex-direction: column;
+}
+
+#kontakt>p, #info>div>div>:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+#kontakt div, #kont div {
+    display: flex;
+    justify-content: center;
+    height: 41px;
+    align-items: center;
+}
+
+#kontakt>:nth-child(4) img {
+    width: 28px;
+}
+
+#kontakt>:nth-child(6) img {
+    width: 28px;
+}
+
+@media (min-width: 1241px) {
+    header {
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 10;
+        top: 0px;
+        left: 0px;
+        padding: 10px 10px 5px;
+    }
+
+    li a {
+        transition: border-color 0.5s, background-color 0.5s;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: rgb(106, 156, 180);
+        color: white;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+}
+
+
+@media (max-width: 1240px) {
+    header {
+        margin: 10px 2%;
+        padding: 10px 1%;
+        position: fixed;
+        background-color: white;
+        width: 94%;
+        z-index: 10;
+    }
+    nav {
+        float: none;
+        display: none;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+    #icons-for-resp {
+        display: inline-block;
+        margin-left: 50px;
+    }
+
+    #icons-for-resp a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #menu-label {
+        display: block;
+        float: right;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    #menu-label img {
+        width: 50px;
+    }
+
+    #menu:checked + nav {
+        display: block;
+    }
+
+    #proizvodi-dropdown:checked + div {
+        display: block;
+    }
+
+    .dropdown a {
+        cursor: pointer;
+    }
+
+    li {
+        display: block;
+        width: 100%;
+    }
+
+    li a {
+        text-align: left;
+        width: 100%;
+        border-bottom: 1px solid rgb(150, 150, 150, 0.4);
+    }
+
+    .dropdown-content {
+        padding-left: 50px;
+    }
+
+    #facebook-icon, #instagram-icon, #prijava-icon, #kosarica-icon {
+        display: none;
+    }
+
+    main {
+        padding-top: 200px;
+    }
+
+    #info>div {
+        width: 400px;
+        padding: 25px 35px 30px;
+        border-radius: 60px;
+    }
+
+    #info>:nth-child(2) {
+        margin-left: 5%;
+    }
+    
+    #info>:nth-child(3) {
+        margin-right: 2%;
+        position: relative;
+        top: -150px;
+        float: right;
+        padding-bottom: 30px;
+    }
+    
+    #info>:nth-child(4) {
+        margin-left: 15%;
+        margin-top: 170px;
+        padding-bottom: 30px;
+    }
+
+    #kontakt-forma>div {
+         width: 80%;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 910px) {
+    #info>:nth-child(3) {
+        margin-right: 2%;
+        position: relative;
+        top: 20px;
+        float: right;
+        padding-bottom: 30px;
+    }
+    
+    #info>:nth-child(4) {
+        margin-left: 15%;
+        margin-top: 335px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    #icons-for-resp {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header {
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 10;
+        top: 0px;
+        left: 0px;
+        padding: 10px 10px 5px;
+        margin: 0px;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    main {
+        padding-top: 130px;
+    }
+
+    #info>div {
+        width: 90%;
+        padding: 25px 35px 30px;
+        border-radius: 30px;
+        margin-left: 5%;
+    }
+    
+    #info>:nth-child(3) {
+        top: 0px;
+        float: none;
+        padding-bottom: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    #info>:nth-child(4) {
+        margin-left: 5%;
+        margin-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    .not-phone {
+        display: none;
+    }
+
+    #kontakt-forma div>:nth-child(3) {
+        flex-direction: column;
+    }
+
+    #kontakt-forma div div input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        margin-top: 0px;
+    }
+
+    .button {
+        height: 40px;
+        width: 180px;
+    }
+
+    footer {
+        margin-top: 30px;
+        background-image: unset;
+        background-color:rgb(106, 156, 180);
+    }
+
+    footer>div {
+        width: 90%;
+    }
+
+    footer>:nth-child(1) {
+        flex-direction: column;
+    }
+
+    #kontakt {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    #icons-for-resp {
+        width: 50%;
+    }
+}
+
+@media (max-width: 370px) {
+    #icons-for-resp {
+        width: 40%;
+    }
+
+    #icons-for-resp a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

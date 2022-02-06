@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="zavrsni-rad">
+        <meta name="author" content="Miroslav Krznar">
+        <title>Završni rad - naslovna</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
+        <script src="script/index.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><div id="logo"></div></a>
+            <div id="icons-for-resp">
+                <a href="stranice/prijava.html"><img src="img/contacts.svg" /></a>
+                <a href="stranice/kosarica.html"><img src="img/shopping-cart.svg" /></a>
+            </div>
+            <label for="menu" id="menu-label">
+                <img src="img/menu.svg" />
+            </label>
+            <input type="checkbox" id="menu" />
+            <nav id="navigation">
+                <ul>
+                    <li class="nav-item"><a href="index.html">Naslovna</a></li>
+                    <li class="nav-item"><a href="stranice/o-nama.html">O nama</a></li>
+                    <label for="proizvodi-dropdown" id="proizvodi-label">
+                    <li class="nav-item dropdown">
+                        <a id="for-after-arrow">Proizvodi</a>
+                        <input type="checkbox" id="proizvodi-dropdown" />
+                        <div class="dropdown-content">
+                            <a href="stranice/proizvodi-opcenito.html">Općenito</a>
+                            <a href="stranice/proizvodi-slatko.html">Slatko</a>
+                            <a href="stranice/proizvodi-slano.html">Slano</a>
+                            <a href="stranice/proizvodi-pice.html">Piće</a>
+                            <a href="stranice/proizvodi-veganski.html">Veganski i bezglutenski</a>
+                        </div>
+                    </li>
+                    </label>
+                    <li class="nav-item"><a href="stranice/zaposljavanje.html">Zapošljavanje</a></li>
+                    <li class="nav-item"><a href="stranice/blog.html">Blog</a></li>
+                    <li class="nav-item"><a href="stranice/kontakt.html">Kontakt</a></li>
+                    <li id="kosarica-icon"><a href="stranice/kosarica.html"><img src="img/shopping-cart.svg" /></a></li>
+                    <li id="prijava-icon"><a href="stranice/prijava.html"><img src="img/contacts.svg" /></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <div id="zoomed-image" onclick="hideZoom()">
+                <img src="" />
+            </div>
+
+            <div id="main-image">
+                <div class="arrows">
+                    <div>
+                        <button class="arrow" onclick="switchImage(-1)"><img src="img/left-arrow.svg" /></button>
+                    </div>
+                    <div>
+                        <button class="arrow" onclick="switchImage(1)"><img src="img/right-arrow.svg" /></button>
+                    </div>
+                </div>
+                <div class="circles">
+                    <div>
+                        <button class="circle" onclick="switchTo(0)"><img src="img/circle.svg" /></button>
+                    </div>
+                    <div>
+                        <button class="circle" onclick="switchTo(1)"><img src="img/circle.svg" /></button>
+                    </div>
+                    <div>
+                        <button class="circle" onclick="switchTo(2)"><img src="img/circle.svg" /></button>
+                    </div>
+                    <div>
+                        <button class="circle" onclick="switchTo(3)"><img src="img/circle.svg" /></button>
+                    </div>
+                </div>
+
+                <div class="text-button">
+                    <h1>Ukusne torte i kolači</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec 
+                        malesuada consectetur quam quis mattis. Ut nec sagittis diam. 
+                        Aliquam non mollis nibh. Nam ipsum massa, scelerisque vel 
+                        facilisis et, mollis ac arcu.</p>
+                    <button class="button"><a href="stranice/proizvodi-opcenito.html">POGLEDAJTE NAŠE PROIZVODE</a></button>
+                </div>
+            </div>
+
+            <div id="slatko">
+                <div class="vslika-kategorija">
+                    <div class="text-button-vslika">
+                        <button class="button"><a href="stranice/proizvodi-slatko.html">PRONAĐITE NEŠTO SLATKO...</a></button>
+                    </div>
+                </div>
+                <div class="mslika-kategorija">
+                    <div>
+                        <div>
+                            <div id="slatko-prva" class="mala-slika">
+                                <img src="img/zoom-in.svg" />
+                                <img src="img/shopping-cart-buy.svg" />
+                            </div>
+                            <div>
+                                <a href="stranice/proizvod-detalji.html">
+                                    <p>Naziv <span>(klik za detalje)</span></p>
+                                    <p>Cijena: 100,00 kn</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="slatko-druga" class="mala-slika">
+                                <img src="img/zoom-in.svg" />
+                                <img src="img/shopping-cart-buy.svg" />
+                            </div>
+                            <div>
+                                <a href="stranice/proizvod-detalji.html">
+                                    <p>Naziv <span>(klik za detalje)</span></p>
+                                    <p>Cijena: 100,00 kn</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div>
+                            <div id="slatko-treca" class="mala-slika">
+                                <img src="img/zoom-in.svg" />
+                                <img src="img/shopping-cart-buy.svg" />
+                            </div>
+                            <div>
+                                <a href="stranice/proizvod-detalji.html">
+                                    <p>Naziv <span>(klik za detalje)</span></p>
+                                    <p>Cijena: 100,00 kn</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="slatko-cetvrta" class="mala-slika">
+                                <img src="img/zoom-in.svg" />
+                                <img src="img/shopping-cart-buy.svg" />
+                            </div>
+                            <div>
+                                <a href="stranice/proizvod-detalji.html">
+                                    <p>Naziv <span>(klik za detalje)</span></p>
+                                    <p>Cijena: 100,00 kn</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="linije">
+                    <hr class="gornja-linija" />
+                    <hr class="linija" />
+                </div>-->
+            </div>
+
+            <div id="slano">
+                <div class="vslika-kategorija">
+                    <div class="text-button-vslika">
+                        <button class="button"><a href="stranice/proizvodi-slano.html">...ILI SLANO...</a></button>
+                    </div>
+                </div>
+                <div class="mslika-kategorija">
+                    <div>
+                        <div>
+                            <div id="slano-prva" class="mala-slika">
+                                <img src="img/zoom-in.svg" />
+                                <img src="img/shopping-cart-buy.svg" />
+                            </div>
+                            <div>
+                                <a href="stranice/proizvod-detalji.html">
+                                    <p>Naziv <span>(klik za detalje)</span></p>
+                                    <p>Cijena: 100,00 kn</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="slano-druga" class="mala-slika">
+                                <img src="img/zoom-in.svg" />
+                                <img src="img/shopping-cart-buy.svg" />
+                            </div>
+                            <div>
+                                <a href="stranice/proizvod-detalji.html">
+                                    <p>Naziv <span>(klik za detalje)</span></p>
+                                    <p>Cijena: 100,00 kn</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div>
+                            <div id="slano-treca" class="mala-slika">
+                                <img src="img/zoom-in.svg" />
+                                <img src="img/shopping-cart-buy.svg" />
+                            </div>
+                            <div>
+                                <a href="stranice/proizvod-detalji.html">
+                                    <p>Naziv <span>(klik za detalje)</span></p>
+                                    <p>Cijena: 100,00 kn</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="slano-cetvrta" class="mala-slika">
+                                <img src="img/zoom-in.svg" />
+                                <img src="img/shopping-cart-buy.svg" />
+                            </div>
+                            <div>
+                                <a href="stranice/proizvod-detalji.html">
+                                    <p>Naziv <span>(klik za detalje)</span></p>
+                                    <p>Cijena: 100,00 kn</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pice">
+                <div class="vslika-kategorija">
+                    <div class="text-button-vslika">
+                        <button class="button"><a href="stranice/proizvodi-pice.html">...UZ PIĆE PO VAŠOJ ŽELJI...</a></button>
+                    </div>
+                </div>
+                <div class="mslika-kategorija">
+                    <div>
+                        <div>
+                            <div id="pice-prva" class="mala-slika">
+                                <img src="img/zoom-in.svg" />
+                                <img src="img/shopping-cart-buy.svg" />
+                            </div>
+                            <div>
+                                <a href="stranice/proizvod-detalji.html">
+                                    <p>Naziv <span>(klik za detalje)</span></p>
+                                    <p>Cijena: 100,00 kn</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="pice-druga" class="mala-slika">
+                                <img src="img/zoom-in.svg" />
+                                <img src="img/shopping-cart-buy.svg" />
+                            </div>
+                            <div>
+                                <a href="stranice/proizvod-detalji.html">
+                                    <p>Naziv <span>(klik za detalje)</span></p>
+                                    <p>Cijena: 100,00 kn</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div>
+                            <div id="pice-treca" class="mala-slika">
+                                <img src="img/zoom-in.svg" />
+                                <img src="img/shopping-cart-buy.svg" />
+                            </div>
+                            <div>
+                                <a href="stranice/proizvod-detalji.html">
+                                    <p>Naziv <span>(klik za detalje)</span></p>
+                                    <p>Cijena: 100,00 kn</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="pice-cetvrta" class="mala-slika">
+                                <img src="img/zoom-in.svg" />
+                                <img src="img/shopping-cart-buy.svg" />
+                            </div>
+                            <div>
+                                <a href="stranice/proizvod-detalji.html">
+                                    <p>Naziv <span>(klik za detalje)</span></p>
+                                    <p>Cijena: 100,00 kn</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id="lokacija">
+                <h2>...u ugodnoj atmosferi slastičarnice Meet Mia</h2>
+                <div>
+                    <div id="lok-prva" class="mala-slika">
+                        <img src="img/zoom-in.svg" />
+                    </div>
+                    <div id="lok-druga" class="mala-slika">
+                        <img src="img/zoom-in.svg" />
+                    </div>
+                    <div id="lok-treca" class="mala-slika">
+                        <img src="img/zoom-in.svg" />
+                    </div>
+                    <div id="lok-cetvrta" class="mala-slika">
+                        <img src="img/zoom-in.svg" />
+                    </div>
+                </div>
+                <button class="button"><a href="stranice/kontakt.html">POSJETITE NAS</a></button>
+            </div>
+
+            <div id="lok-image">
+                <div class="arrows">
+                    <div>
+                        <button class="arrow" onclick="switchImageLok(-1)"><img src="img/left-arrow.svg" /></button>
+                    </div>
+                    <div>
+                        <button class="arrow" onclick="switchImageLok(1)"><img src="img/right-arrow.svg" /></button>
+                    </div>
+                </div>
+                <div class="circles">
+                    <div>
+                        <button class="circle" onclick="switchToLok(0)"><img src="img/circle.svg" /></button>
+                    </div>
+                    <div>
+                        <button class="circle" onclick="switchToLok(1)"><img src="img/circle.svg" /></button>
+                    </div>
+                    <div>
+                        <button class="circle" onclick="switchToLok(2)"><img src="img/circle.svg" /></button>
+                    </div>
+                    <div>
+                        <button class="circle" onclick="switchToLok(3)"><img src="img/circle.svg" /></button>
+                    </div>
+                </div>
+                <div class="change-picture">
+                    
+                </div>
+                <div class="text-button">
+                    <h2>...u ugodnoj atmosferi slastičarnice Meet Mia</h2>
+                    <button class="button"><a href="stranice/kontakt.html">POSJETITE NAS</a></button>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div>
+                <div>
+                    <p>UVJETI KUPNJE</p><br />
+                    <p><a href="#">Opći uvjeti</a></p>
+                    <p><a href="#">Načini plaćanja</a></p>
+                    <p><a href="#">Dostava</a></p>
+                    <p><a href="#">Reklamacija</a></p>
+                    <p><a href="#">Privatnost i sigurnost</a></p>
+                </div>
+                <div id="kontakt">
+                    <p>KONTAKT</p><br />
+                    <div>
+                        <img src="img/address.svg" />
+                        <p>Vlaška 43, 10000 Zagreb</p>
+                    </div>
+                    <div>
+                        <img src="img/email.svg" />
+                        <p><a href="#">meetmia.cakes@gmail.com</a></p>
+                    </div>
+                    <div>
+                        <img src="img/phone.svg" />
+                        <p>01 4683 823</p>
+                    </div>
+                    <div>
+                        <img src="img/time.svg" />
+                        <p>09:00 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <a href="https://hr-hr.facebook.com/meetmia/" target="_blank"><img src="img/facebook.svg" /></a>
+                <a href="https://www.instagram.com/meetmiacakes/?hl=hr" target="_blank"><img src="img/instagram.svg" /></a>
+            </div>
+        </footer>
+    </body>
+</html>

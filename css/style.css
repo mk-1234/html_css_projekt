@@ -1,0 +1,936 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/logo.png");
+    background-position: center;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#icons-for-resp {
+    display: none;
+}
+
+#menu, #proizvodi-dropdown {
+    display: none;
+}
+
+#menu-label {
+    display: none;
+}
+
+nav {
+    float: right;
+    padding: 20px 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    display: inline-block;
+    padding: 14px 18px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    background-color: white;
+    border-bottom: 2px solid rgba(142, 185, 199, 0);
+    border-radius: 5px;
+}
+
+#for-after-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#for-after-arrow::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url('../img/down-arrow.svg') no-repeat;
+    margin-left: 5px;
+    float: right;
+}
+
+#facebook-icon {
+    margin-left: 20px;
+}
+
+#facebook-icon a, #instagram-icon a, #prijava-icon a {
+    padding: 10px 5px;
+}
+
+a img {
+    vertical-align: middle;
+    width: 40px;
+}
+
+#icons-for-resp>:nth-child(2) img, #kosarica-icon img {
+    width: 36px;
+}
+
+.nav-item a:hover {
+    background-color: rgb(106, 156, 180);
+    border-color: rgb(171, 198, 207);
+    color: white;
+}
+
+#zoomed-image {
+    display: none;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 200px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+
+#zoomed-image img {
+    margin: auto;
+    display: block;
+    width: 50%;
+}
+
+#main-image {
+    height: 800px;
+    background-image: url('../img/main-pic-wide.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+}
+
+.text-button {
+    position: relative;
+    left: 260px;
+    top: -360px;
+    width: 40%;
+}
+
+.text-button-vslika {
+    position: relative;
+    left: 40px;
+    top: 80%;
+    width: 70%;
+    color: white;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 0px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+nav {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.button {
+    background-color: lightgray;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    padding: 0px;
+}
+
+.button a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.button a:hover {
+    background-color: darkgray;
+    color: white;
+    border: 2px solid grey;
+}
+
+.arrow, .circle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #628697;
+}
+
+.arrows {
+    display: flex;
+    height: 460px;
+    align-items: flex-end;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.arrow img:hover {
+    background-color: rgba(211, 211, 211, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.circles {
+    display: flex;
+    height: 340px;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 30px;
+
+}
+
+.arrow img {
+    width: 64px;
+    color: #628697;
+    transition: 0.3s;
+}
+
+.circle {
+    margin: 10px;
+}
+
+.circle img {
+    width: 20px;
+    color: #628697;
+    transition: 0.3s;
+}
+
+.circle img:hover {
+    padding: 5px;
+}
+
+#slatko, #pice {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#slano {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+#lokacija {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lokacija>div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#lokacija>div>div {
+    width: 20%;
+}
+
+.linije {
+    display: none;
+}
+
+.vslika-kategorija {
+    width: 40%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+#slatko .vslika-kategorija {
+    background-image: url('../img/slatko_19.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#slano .vslika-kategorija {
+    background-image: url('../img/slano_14.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#pice .vslika-kategorija {
+    background-image: url('../img/pice_06.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.mslika-kategorija {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mala-slika img {
+    width: 48px;
+    background-color: rgba(152, 152, 152, 0.5);
+    padding: 8px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+
+.mslika-kategorija p {
+    margin: 5px 0px;
+    padding-left: 10px;
+}
+
+.mslika-kategorija div a {
+    text-decoration: none;
+    color: black;
+}
+
+.mslika-kategorija span {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.mslika-kategorija>div {
+    display: flex;
+    flex-direction: row;
+}
+
+.mslika-kategorija>div>:nth-child(1) {
+    margin-right: 5px;
+}
+
+.mslika-kategorija>div>:nth-child(2) {
+    margin-left: 5px;
+}
+
+.mslika-kategorija>div>div {
+    width: 100%;
+}
+
+.mslika-kategorija>div>div>:nth-child(2):hover {
+    background-color: darkgray;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.mslika-kategorija a:hover {
+    color: white;
+    transition: 0.3s;
+}
+
+.mala-slika {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-size: cover;
+    height: 190px;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.mala-slika>:nth-child(1) {
+    margin-right: 3px;
+}
+
+.mala-slika>:nth-child(2) {
+    margin-left: 3px;
+}
+
+.mala-slika img:hover {
+    width: 64px;
+    background-color: rgba(95, 125, 129, 0.7);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-phone {
+    display: none;
+}
+
+#lokacija h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#lokacija>div>:nth-child(2) {
+    margin-left: 7px;
+    margin-right: 6px; 
+}
+
+#lokacija>div>:nth-child(3) {
+    margin-right: 7px; 
+}
+
+#lokacija button {
+    width: 300px;
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 100px;
+    background-image: url('../img/logo_footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0px 50px;
+}
+
+footer>div {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+footer>div>div {
+    width: 100%;
+    text-align: center;
+}
+
+footer div div img {
+    width: 32px;
+    margin-right: 10px;
+}
+
+footer a {
+    color: white;
+}
+
+#kontakt {
+    display: flex;
+    flex-direction: column;
+}
+
+#kontakt>p {
+    margin-bottom: 30px;
+}
+
+#kontakt div {
+    display: flex;
+    justify-content: center;
+    height: 41px;
+    align-items: center;
+}
+
+#kontakt>:nth-child(4) img {
+    width: 28px;
+}
+
+#kontakt>:nth-child(6) img {
+    width: 28px;
+}
+
+#slatko-prva {
+    background-image: url('../img/slatko_08.jpg');
+}
+
+#slatko-druga {
+    background-image: url('../img/slatko_04.jpg');
+}
+
+#slatko-treca {
+    background-image: url('../img/slatko_02.jpg');
+}
+
+#slatko-cetvrta {
+    background-image: url('../img/slatko_17.jpg');
+}
+
+#slano-prva {
+    background-image: url('../img/slano_01.jpg');
+}
+
+#slano-druga {
+    background-image: url('../img/slano_03.jpg');
+}
+
+#slano-treca {
+    background-image: url('../img/slano_05.jpg');
+}
+
+#slano-cetvrta {
+    background-image: url('../img/slano_09.jpg');
+}
+
+#pice-prva {
+    background-image: url('../img/pice_01.jpg');
+}
+
+#pice-druga {
+    background-image: url('../img/pice_02.jpg');
+}
+
+#pice-treca {
+    background-image: url('../img/pice_03.jpg');
+}
+
+#pice-cetvrta {
+    background-image: url('../img/pice_04.jpg');
+}
+
+#lok-prva {
+    background-image: url('../img/lokacija_01.jpg');
+}
+
+#lok-druga {
+    background-image: url('../img/lokacija_05.jpg');
+}
+
+#lok-treca {
+    background-image: url('../img/lokacija_03.jpg');
+}
+
+#lok-cetvrta {
+    background-image: url('../img/lokacija_08.jpg');
+}
+
+@media (min-width: 1241px) {
+    header {
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 10;
+        top: 0px;
+        left: 0px;
+        padding: 10px 10px 5px;
+    }
+
+    li a {
+        transition: border-color 0.5s, background-color 0.5s;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: rgb(106, 156, 180);
+        color: white;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    #slatko .vslika-kategorija, #pice .vslika-kategorija {
+        margin-right: 10px;
+    }
+    
+    #slano .vslika-kategorija {
+        margin-left: 10px;
+    }
+
+    #slatko .mslika-kategorija, #pice .mslika-kategorija {
+        margin-left: 10px;
+    }
+    
+    #slano .mslika-kategorija {
+        margin-right: 10px;
+    }
+
+    #lok-image {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1240px) {
+    header {
+        margin: 10px 2%;
+        padding: 10px 1%;
+        position: fixed;
+        background-color: white;
+        width: 94%;
+        z-index: 10;
+    }
+    nav {
+        float: none;
+        display: none;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+    #icons-for-resp {
+        display: inline-block;
+        margin-left: 50px;
+    }
+
+    #icons-for-resp a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #menu-label {
+        display: block;
+        float: right;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    #menu-label img {
+        width: 50px;
+    }
+
+    #menu:checked + nav {
+        display: block;
+    }
+
+    #proizvodi-dropdown:checked + div {
+        display: block;
+    }
+
+    .dropdown a {
+        cursor: pointer;
+    }
+
+    li {
+        display: block;
+        width: 100%;
+    }
+
+    li a {
+        text-align: left;
+        width: 100%;
+        border-bottom: 1px solid rgb(150, 150, 150, 0.4);
+    }
+
+    .dropdown-content {
+        padding-left: 50px;
+    }
+
+    #facebook-icon, #instagram-icon, #prijava-icon, #kosarica-icon {
+        display: none;
+    }
+
+    #zoomed-image img {
+        width: 70%;
+    }
+
+    .text-button {
+        text-align: center;
+        width: 100%;
+        position: relative;
+        left: 0px;
+        top: -310px;
+        padding: 0px 150px;
+    }
+
+    .button {
+        width: 330px;
+    }
+
+    #slatko, #pice {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #slano {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #slatko .vslika-kategorija {
+        background-image: url('../img/slatko_19.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #slano .vslika-kategorija {
+        background-image: url('../img/slano_14.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #pice .vslika-kategorija {
+        background-image: url('../img/pice_06.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .vslika-kategorija, .mslika-kategorija {
+        width: 80%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .vslika-kategorija{
+        height: 350px;
+    }
+
+    .mslika-kategorija {
+        margin: 10px 0 0 0;
+    }
+
+    #lokacija {
+        display: none;
+    }
+
+    #lok-image {
+        height: 800px;
+        background-image: url('../img/lokacija_01.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+    }
+
+    #lok-image .text-button {
+        top: -280px;
+    }
+
+    #lok-image .text-button h2 {
+        margin-bottom: 65px;
+    }
+
+    #lok-image .arrows {
+        height: 400px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    #icons-for-resp {
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    header {
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        z-index: 10;
+        top: 0px;
+        left: 0px;
+        padding: 10px 10px 5px;
+        margin: 0px;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    #zoomed-image img {
+        width: 100%;
+    }
+
+    #main-image {
+        height: 700px;
+    }
+
+    .arrows {
+        height: 450px;
+    }
+
+    .circles {
+        height: 250px;
+    }
+
+    .text-button {
+        padding: 0px;
+        top: -165px;
+    }
+
+    .text-button h1, .text-button p {
+        display: none;
+    }
+
+    .button {
+        width: 80%;
+    }
+
+    .text-button-vslika h2, .text-button-vslika p {
+        display: none;
+    }
+
+    .text-button-vslika {
+        position: static;
+        width: 100%;
+    }
+
+    .text-button-vslika button {
+        width: 80%;
+        margin-left: 10%;
+        position: relative;
+        top: 270px;
+    }
+
+    #slatko, #pice {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .linije {
+        display: block;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .linija {
+        display: block;
+        border: 4px solid #91C5DD;
+        width: 100%;
+        position: relative;
+        top: -24px;
+    }
+
+    .gornja-linija {
+        display: block;
+        border: 4px solid #628697;
+        width: 25%;
+        z-index: 2;
+        cursor: pointer;
+        position: relative;
+        left: -38%;
+    }
+
+    .vslika-kategorija, .mslika-kategorija {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .button-pocetni {
+        display: none;
+    }
+
+    .button-phone {
+        display: block;
+    }
+
+    .mslika-kategorija {
+        flex-direction: row;
+        position: relative;
+        left: 0px;
+        user-select: none;
+        overflow: auto;
+    }
+
+    .mslika-kategorija>div>div {
+        width: 320px;
+    }
+
+    .mslika-kategorija>:nth-child(2)>:nth-child(1) {
+        margin-left: 10px;
+    }
+
+    #lok-image {
+        height: 400px;
+        margin-bottom: 180px;
+    }
+
+    #lok-image .arrows {
+        height: 230px;
+    }
+
+    #lok-image .circles {
+        height: 170px;
+    }
+
+    #lok-image .text-button {
+        position: static;
+        color: black;
+    }
+
+    #lok-image .text-button h2 {
+        margin-bottom: 30px;
+    }
+
+    iframe {
+        height: 600px;
+    }
+
+    footer {
+        margin-top: 240px;
+        background-image: unset;
+        background-color:rgb(106, 156, 180);
+    }
+
+    footer>div {
+        width: 90%;
+    }
+
+    footer>:nth-child(1) {
+        flex-direction: column;
+    }
+
+    #kontakt {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 450px) {
+    #icons-for-resp {
+        width: 50%;
+    }
+}
+
+@media (max-width: 370px) {
+    #icons-for-resp {
+        width: 40%;
+    }
+
+    #icons-for-resp a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}

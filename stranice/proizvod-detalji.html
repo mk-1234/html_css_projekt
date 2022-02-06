@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="zavrsni-rad">
+        <meta name="author" content="Miroslav Krznar">
+        <title>Završni rad - detalji</title>
+        <link href="../css/style-detalji.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"><div id="logo"></div></a>
+            <div id="icons-for-resp">
+                <a href="prijava.html"><img src="../img/contacts.svg" /></a>
+                <a href="kosarica.html"><img src="../img/shopping-cart.svg" /></a>
+            </div>
+            <label for="menu" id="menu-label">
+                <img src="../img/menu.svg" />
+            </label>
+            <input type="checkbox" id="menu" />
+            <nav id="navigation">
+                <ul>
+                    <li class="nav-item"><a href="../index.html">Naslovna</a></li>
+                    <li class="nav-item"><a href="o-nama.html">O nama</a></li>
+                    <label for="proizvodi-dropdown" id="proizvodi-label">
+                    <li class="nav-item dropdown">
+                        <a id="for-after-arrow">Proizvodi</a>
+                        <input type="checkbox" id="proizvodi-dropdown" />
+                        <div class="dropdown-content">
+                            <a href="proizvodi-opcenito.html">Općenito</a>
+                            <a href="proizvodi-slatko.html">Slatko</a>
+                            <a href="proizvodi-slano.html">Slano</a>
+                            <a href="proizvodi-pice.html">Pića</a>
+                            <a href="proizvodi-veganski.html">Veganski i bezglutenski</a>
+                        </div>
+                    </li>
+                    </label>
+                    <li class="nav-item"><a href="zaposljavanje.html">Zapošljavanje</a></li>
+                    <li class="nav-item"><a href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a href="kontakt.html">Kontakt</a></li>
+                    <li id="kosarica-icon"><a href="kosarica.html"><img src="../img/shopping-cart.svg" /></a></li>
+                    <li id="prijava-icon"><a href="prijava.html"><img src="../img/contacts.svg" /></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="proizvod" class="-flex">
+                <div class="-flex">
+                    <div class="o-proizvodu">
+                        <h2>Torta od bubamara<br/>Cijena: 100kn</h2>
+                        <p>Sastojci:</p>
+                        <ul>
+                            <li>1/2 kg brašna</li>
+                            <li>1 dcl vode</li>
+                            <li>3 litre ulja</li>
+                            <li>2 kg šećera</li>
+                            <li>1 kg bubamara</li>
+                        </ul>
+                    </div>
+                    <div class="za-kosaricu -flex">
+                        <div class="-flex">
+                            <p>Količina:</p>
+                            <img src="../img/minus.svg" />
+                            <input type="text" placeholder="1" />
+                            <img src="../img/add.svg" />
+                        </div>
+                        <div>
+                            <button class="button button-pocetni">DODAJTE U KOŠARICU</button>
+                            <button class="button button-phone"><img src="../img/shopping-cart.svg"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="-flex">
+                    <div class="vslika"></div>
+                    <div class="mslike -flex">
+                        <img src="../img/left-arrow.svg" />
+                        <div id="mslika-1"></div>
+                        <div id="mslika-2"></div>
+                        <div id="mslika-3"></div>
+                        <div id="mslika-4"></div>
+                        <img src="../img/right-arrow.svg" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="komentar-forma">
+                <div>
+                    <p>Komentirajte:</p>
+                    <input type="text" placeholder="Unesite ime" />
+                    <textarea placeholder="Komentar"></textarea>
+                    <p>Ocjena:
+                        <img src="../img/empty-star.svg" />
+                        <img src="../img/empty-star.svg" />
+                        <img src="../img/empty-star.svg" />
+                        <img src="../img/empty-star.svg" />
+                        <img src="../img/empty-star.svg" />
+                    </p>
+                    <button class="button">POŠALJITE</button>
+                </div>
+            </div>
+
+            <div id="komentari">
+                <div>
+                    <p>Komentari:</p>
+                    <div>
+                        <div>
+                            <div class="korisnik">
+                                <span>pero, </span>
+                                <span>15:32 01.01.2015.</span>
+                            </div>
+                            <div class="ocjena">
+                                <img src="../img/filled-star.svg" />
+                                <img src="../img/filled-star.svg" />
+                                <img src="../img/filled-star.svg" />
+                                <img src="../img/filled-star.svg" />
+                                <img src="../img/filled-star.svg" />
+                            </div>
+                        </div>
+                        <p>najbolja torta. 5/5.</p>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="korisnik">
+                                <span>bob, </span>
+                                <span>03:18 09.07.2018.</span>
+                            </div>
+                            <div class="ocjena">
+                                <img src="../img/empty-star.svg" />
+                                <img src="../img/empty-star.svg" />
+                                <img src="../img/empty-star.svg" />
+                                <img src="../img/empty-star.svg" />
+                                <img src="../img/empty-star.svg" />
+                            </div>
+                        </div>
+                        <p>premalo bubamara, torta nedovoljno slatka. nisam zadovoljan.</p>
+                    </div>
+                    <div>
+                        <div>
+                            <div class="korisnik">
+                                <span>dasgidgsdfgsd, </span>
+                                <span>22:58 26.03.2019.</span>
+                            </div>
+                            <div class="ocjena">
+                                <img src="../img/filled-star.svg" />
+                                <img src="../img/filled-star.svg" />
+                                <img src="../img/filled-star.svg" />
+                                <img src="../img/empty-star.svg" />
+                                <img src="../img/empty-star.svg" />
+                            </div>
+                        </div>
+                        <p>torta je ok, ništa posebno. usluga super, dostava na vrijeme.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <div>
+                    <p>UVJETI KUPNJE</p><br />
+                    <p><a href="#">Opći uvjeti</a></p>
+                    <p><a href="#">Načini plaćanja</a></p>
+                    <p><a href="#">Dostava</a></p>
+                    <p><a href="#">Reklamacija</a></p>
+                    <p><a href="#">Privatnost i sigurnost</a></p>
+                </div>
+                <div id="kontakt">
+                    <p>KONTAKT</p><br />
+                    <div>
+                        <img src="../img/address.svg" />
+                        <p>Vlaška 43, 10000 Zagreb</p>
+                    </div>
+                    <div>
+                        <img src="../img/email.svg" />
+                        <p><a href="#">meetmia.cakes@gmail.com</a></p>
+                    </div>
+                    <div>
+                        <img src="../img/phone.svg" />
+                        <p>01 4683 823</p>
+                    </div>
+                    <div>
+                        <img src="../img/time.svg" />
+                        <p>09:00 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <a href="https://hr-hr.facebook.com/meetmia/" target="_blank"><img src="../img/facebook.svg" /></a>
+                <a href="https://www.instagram.com/meetmiacakes/?hl=hr" target="_blank"><img src="../img/instagram.svg" /></a>
+            </div>
+        </footer>
+    </body>
+</html>
