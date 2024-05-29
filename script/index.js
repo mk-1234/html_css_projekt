@@ -21,8 +21,8 @@ let buttonsTxt = [
 
 let links = [
     'stranice/proizvodi-opcenito.html',
-    'stranice/o-nama.html',
-    'stranice/zaposljavanje.html',
+    'index.html',
+    'index.html',
     'stranice/kontakt.html'
 ];
 
