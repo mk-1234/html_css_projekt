@@ -1,3 +1,3 @@
 # html_css_projekt
 
-online version: https://mkrznar-zavrsni-rad.000webhostapp.com/index.html
+Demonstration of HTML and CSS skills through an example of a pastry shop web page.
